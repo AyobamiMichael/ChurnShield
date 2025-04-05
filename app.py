@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import joblib
-from PIL import Image  # For logo
+from PIL import Image 
 
 # ====== SET PAGE CONFIG ======
 st.set_page_config(
@@ -50,7 +50,7 @@ st.markdown("""
 
 # ====== SIDEBAR ======
 with st.sidebar:
-    # Add your logo (replace with actual image path)
+   
     # st.image("logo.png", width=200)
     st.markdown("""
     <div style='text-align: center; margin-bottom: 2rem;'>
@@ -85,7 +85,7 @@ with st.sidebar:
 st.title("📊 ChurnShield Pro Dashboard")
 st.caption("Predict customer churn risk with 92% accuracy")
 
-# Load model with error handling
+
 @st.cache_resource
 def load_model():
     try:
@@ -122,7 +122,7 @@ with st.form("input_form"):
 # ====== PREDICTION LOGIC ======
 if submitted and package:
     try:
-        # Create complete input data
+    
         input_data = {
             'AccountAge': account_age,
             'MonthlyCharges': monthly_charges,
