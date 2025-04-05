@@ -33,8 +33,6 @@ The model was trained and saved as a `joblib` file, with metadata and a preproce
 
 ## 🚀 How to Run
 
-### 1. Clone the Repository
-
 ```bash
 git clone https://github.com/AyobamiMichael/ChurnShield.git
 cd ChurnShield.git
