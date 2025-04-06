@@ -89,7 +89,7 @@ st.caption("Predict customer churn risk with 92% accuracy")
 @st.cache_resource
 def load_model():
     try:
-        model = joblib.load(r'C:\Users\ChurnShield\churnshield_20250329_235156.pkl')
+        model = joblib.load('churnshield_20250329_235156.pkl')
         return model
     except Exception as e:
         st.sidebar.error(f"Model loading failed: {str(e)}")
